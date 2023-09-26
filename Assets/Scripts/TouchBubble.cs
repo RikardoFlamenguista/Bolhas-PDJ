@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+
 public class TouchBubble : MonoBehaviour
 {
 
@@ -114,12 +115,21 @@ public class TouchBubble : MonoBehaviour
 #endif
 
 
+        /*
+        #if UNITY_EDITOR
 
-        /*#if UNITY_EDITOR
+              if(Input.GetMouseButtonDown(0))
+        {
 
-                if (Keyboard.current.gKey.wasPressedThisFrame)
-                {
-                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Vector3 clickPositionScreen = Input.mousePosition;
+
+            float distanceFromCamera = 10;
+
+            Vector3 clickPositionWorld = Camera.main.ScreenToWorldPoint(new Vector3(clickPositionScreen.x, clickPositionScreen.y, distanceFromCamera));
+
+
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                     RaycastHit hit;
 
                     if (Physics.Raycast(ray, out hit))
@@ -130,7 +140,7 @@ public class TouchBubble : MonoBehaviour
                 }
 
         #endif*/
-
+        
 
 
     }
