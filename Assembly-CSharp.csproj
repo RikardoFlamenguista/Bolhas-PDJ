@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ColliderCheck.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\MenusController.cs" />
     <Compile Include="Assets\Scripts\BloodBubble.cs" />
     <Compile Include="Assets\Scripts\TouchBubble.cs" />
   </ItemGroup>
